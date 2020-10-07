@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Image, StyleSheet, View , TouchableOpacity} from 'react-native';
+import { Text, Image, StyleSheet, View ,Button, TouchableOpacity} from 'react-native';
 
 const Home = (props) => {
     console.log(props)
@@ -23,20 +23,18 @@ const Home = (props) => {
                     function () { props.navigation.navigate("Profile") }}>
                 <Text style={styles.buttonText}> Profile </Text>
             </TouchableOpacity>
-
-            <TouchableOpacity
-                style={styles.buttonStyle }
+            
+            <Button
+                title='Semester Wise Course List'
                 onPress={
-                function () { props.navigation.navigate("SemesterList") }}>
-                <Text style={styles.buttonText}> Semester Wise Course List </Text>
-            </TouchableOpacity>
+                    function () { props.navigation.navigate("SemesterList") }
+                }/>
 
-            <TouchableOpacity
-                style={styles.buttonStyle }
+            <Button
+                title='List of Faculty Members'
                 onPress={
-                function () { props.navigation.navigate("FacultyList") }}>
-                <Text style={styles.buttonText}> List of Faculty Members </Text>
-            </TouchableOpacity>
+                    function () { props.navigation.navigate("FacultyList") }
+                }/>
         </View>
     );
 }
