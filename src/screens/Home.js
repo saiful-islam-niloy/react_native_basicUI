@@ -62,10 +62,9 @@ const styles = StyleSheet.create(
             textAlign:"center"
         },
         image:{
-            display:"flex",
             justifyContent:"center",
             alignContent:"center",
-            margin:20,
+            marginLeft:150,
             marginTop:10,
             alignContent:"center"
         }

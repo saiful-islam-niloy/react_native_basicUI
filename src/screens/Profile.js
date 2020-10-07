@@ -5,10 +5,12 @@ const Profile =()=>{
     // console.log(props)
     return (
         <View>
-            <Image source={
+            <Image 
+                style={styles.image}
+                source={
                 {
-                    height: 100,
-                    width: 100,
+                    height: 200,
+                    width: 200,
                     uri: "https://avatars3.githubusercontent.com/u/52848678?s=460&u=c2a7d88fe4a0cef108cf41c8b3b577b5062c8469&v=4"
                 }
             }/>
@@ -26,6 +28,9 @@ const styles = StyleSheet.create(
             textAlign:"center",
             fontSize: 22,
             color: "red"
+        },
+        image:{
+            marginLeft:100
         }
     }
 )
